@@ -25,19 +25,19 @@
 
   ### Practical Examples (project/Amazon)
 
-    **1.a**
+  **1.a**
 
-      Calculate the cost of items in the cart before tax and shipping (items(3))?
+    Calculate the cost of items in the cart before tax and shipping (items(3))?
 
-      20.95 + (10.90 * 2)
-      = 42.75
+    20.95 + (10.90 * 2)
+    = 42.75
 
-      **2.a**
+  **2.a**
 
-      Calculate the cost of the products plus shipping?
+    Calculate the cost of the products plus shipping?
 
-      20.95 + 4.99 + 10.90 * 2
-      = 47.74 
+    20.95 + 4.99 + 10.90 * 2
+    = 47.74 
 
 ## Order of Operations (Operator Precedence)
 
@@ -57,16 +57,17 @@
 
     - and finally division
 
+
+### Practical Examples (project/Amazon)
+
  **b.**  
 
-  ### Practical Examples (project/Amazon)
+  **1.b**
 
-    **1.b**
+    Calculate the cost of items in the cart before tax and shipping (items(3))?
 
-      Calculate the cost of items in the cart before tax and shipping (items(3))?
-
-      7.99 * 2 + 20.95
-      = 36.93
+    7.99 * 2 + 20.95
+    = 36.93
 
   ## How to calculate Tax(%)
 
@@ -81,15 +82,15 @@
 
   **1.c**
 
-      Calculate 10% tax for the estimated tax for the item in the cart?
+    Calculate 10% tax for the estimated tax for the item in the cart?
 
-      20.95 + 7.99 *2 
-      = 36.93
+    20.95 + 7.99 *2 
+    = 36.93
 
-      10% = 10/100 = 0.1
+    10% = 10/100 = 0.1
 
-      36.93 * 0.1
-      = 3.693
+    36.93 * 0.1
+    = 3.693
 
 ## Weird Behavior of math in JavaScript
 
@@ -107,22 +108,22 @@ Javascript and other programming languages have a hard time storing Floats as so
 
     Calculate the cost of the items in the cart?
 
-      20.95 + 7.99
-      = 28.939999999999998
+    20.95 + 7.99
+    = 28.939999999999998
 
   **because this are floats you get a recurring answer. To solve this calculate money in cents and then divide by 100 to convert to correct currency conversion**
 
   **2.d**
 
-      (2095 + 799) / 100
-      = 28.94
+    (2095 + 799) / 100
+    = 28.94
 
 ## how to round a number to the nearest interger
 
-    use Math.round() and _make sure the m is in caps_
+    use Math.round() and _make sure the **m** is in caps_
 
-      Math.round(2.2)
-      = 2
+    Math.round(2.2)
+    = 2
 
   **this will round the number down to 2**
 
@@ -137,17 +138,15 @@ Javascript and other programming languages have a hard time storing Floats as so
 
     Calculate the Estimated tax
 
-      ((2095 + 799) * 0.1) / 100
-      = 2.894
+    ((2095 + 799) * 0.1) / 100
+    = 2.894
 
   **2.e**
 
-    Round the number to match the tax shown in the cart
+    Round the number to match the tax shown in the cart. Round of the number in cents first and then divide by 100
 
-    _round of the number in cents first and then divide by 100_
-
-      Math.round((2095 + 799) * 0.1) / 100
-      < 2.89
+    Math.round((2095 + 799) * 0.1) / 100
+    = 2.89
 
 ## How to use google to learn new features of JavaScript
 
