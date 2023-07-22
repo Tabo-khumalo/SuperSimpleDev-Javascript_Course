@@ -4,7 +4,7 @@
 
 
 2 + 4
-6  -> **Addition**
+= 6  -> **Addition**
 
 4 - 2
 = 2 -> **Subtration**
