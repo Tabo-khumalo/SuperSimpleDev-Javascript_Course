@@ -1,69 +1,63 @@
-Whats is JavaScript?
+# Whats is JavaScript?
 
 
-Javascript is a technology we use to create website and make the web pages interactive.
+Javascript is a technology we use to create websites and make web pages interactive.
 
 
-	- JavaScript is giving a computer instruction.
+- JavaScript is giving a computer instruction.
 
-	- And the computer following those instructions.
-
-
-
-We have three technologies we use to create a website
+- And the computer following those instructions.
 
 
-	1. HTML (Hyper Text Markup Language)
+## We have three technologies we use to create a website
 
-		- Html creates the content of a webpage.it is used to create the buttons, text and images we see on the web page.
+### HTML (Hyper Text Markup Language)
 
-	2. CSS (Cascading Style Sheets)
+- Html creates the content of a webpage.it is used to create the buttons, text and images we see on the web page.
 
-		- CSS Changes the appearance of the website by adding colors and layouts to your web page.
+### CSS (Cascading Style Sheets)
 
-	3. JavaScript
+- CSS Changes the appearance of the website by adding colors and layouts to your web page.
 
-		- JavaScipt makes the website interavtive. It gives the web page functionality like adding orders, clicking next and things like that.
+### JavaScript
 
-
-Setup - What do you need to write Javascript
-
-	1. install a web browser like chrome or firefox
-
-	2. install a code editor like VS Code.
+- JavaScipt makes the website interavtive. It gives the web page functionality like adding orders, clicking next and things like that.
 
 
-How to use the browser console to write code.
+## Setup - What do you need to write Javascript
 
-	- open your web browser and on any blank area of the page, right click and click on inspect.
+- install a web browser like chrome or firefox
 
-	on the top tabs, click on console.
-
-
-running code in the console.
-
-	alert('hello'); 
-
-		- this code will bring up a pop up on the webpage that says hello
-
-		You can also do Math in the console like. 1 + 1 and the console will calcute the eqaution and return 2 as the answer.
+- install a code editor like VS Code.
 
 
-	document.body.innerHTML = 'hello'; 
+## How to use the browser console to write code.
 
-		- this code will replace everything that is currently showing on the webpage with the text hello. This is the most important feature of JavaScript called, modifying the webpage.
+- open your web browser and on any blank area of the page, right click and click on inspect. On the top tabs, click on console.
 
 
-Terminology
+## running code in the console.
 
-	- The instructions we give to a computer are called code
+**alert('hello');**
 
-	- when you write code and then hit enter it is called, Running the code.
+- this code will bring up a pop up on the webpage that says hello. You can also do Math in the console like. 1 + 1 and the console will calcute the eqaution and return 2 as the answer.
 
-	- There are varies language you can use to write code and these are called Programming Language. e.g, Javacript and python.
 
-Syntax 
+**document.body.innerHTML = 'hello';**
 
-	- rules that we have to follow when using a programming language. similar to english grammar but far more strict. 
+- this code will replace everything that is currently showing on the webpage with the text hello. This is the most important feature of JavaScript called, modifying the webpage.
+
+
+## Terminology
+
+- The instructions we give to a computer are called code
+
+- when you write code and then hit enter it is called, Running the code.
+
+- There are varies language you can use to write code and these are called Programming Language. e.g, Javacript and python.
+
+## Syntax 
+
+- rules that we have to follow when using a programming language. similar to english grammar but far more strict. 
 	 
-	- alert 'hello'); this will return a syntax error because there is a bracket missing in the code.
+- alert 'hello'); this will return a syntax error because there is a bracket missing in the code.
