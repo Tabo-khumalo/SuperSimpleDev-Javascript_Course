@@ -87,15 +87,15 @@ Below is the structure every website uses for its html.
 
 ## Javascript
 
- The script element allows authors to include dynamic script and data blocks in their documents. The element does not represent content for the user. When used to include dynamic scripts, the scripts may either be embedded inline or may be imported from an external file using the src attribute.
+  The script element allows authors to include dynamic script and data blocks in their documents. The element does not represent content for the user. When used to include dynamic scripts, the scripts may either be embedded inline or may be imported from an external file using the src attribute.
 
-  - We user the script element in HTML to embed or write Javascript code. `<script></script>`.
-  - We usually put the script element at the bottom of the body to allow the webpage to be create first and then use JavaScript to make the page interactive.
-  - We can also use special HTML attribute to run javaScript. `onclick=" "`
-  - You can add the _onclick_ attribute to the opening tag of your element `<button onclick=" "></button>` and type your JavaScript code between the double qoutes
-  - The JavaScript code will now run when you click the button
-  
-  ### Console.log
+    - We user the script element in HTML to embed or write Javascript code. `<script></script>`.
+    - We usually put the script element at the bottom of the body to allow the webpage to be create first and then use JavaScript to make the page interactive.
+    - We can also use special HTML attribute to run javaScript. `onclick=" "`
+    - You can add the _onclick_ attribute to the opening tag of your element `<button onclick=" "></button>` and type your JavaScript code between the double qoutes
+    - The JavaScript code will now run when you click the button
+
+### Console.log
 
   The `console.log()`is a function in JavaScript that is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user
 
