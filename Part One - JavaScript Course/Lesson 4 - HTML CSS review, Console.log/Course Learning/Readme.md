@@ -1,6 +1,6 @@
 # HTML CSS Review, Console.log
 
-## What does HTML, CSS and JavaScript do in a website**
+## What does HTML, CSS and JavaScript do in a website
 
   - HTML
     - creates the content and structure of the website
@@ -19,16 +19,16 @@
 
 **Syntax**
 
-  - type a Less `<` than symbol
-  - include an element name 
+  - Type a Less `<` than symbol
+  - Include an element name 
     `e.g <button`
-  - end with a greater `>` than symbol
+  - End with a greater `>` than symbol
   - `<button>` this create an HTML tag called an opening tag
-  - each HTML tag needs a closing html tag that has a slash before the element name. e.g `</button>`.
-  - inbetween the tags you have the contents of the tag. `<button>Hello</button>`
-  - we can also have a element is side another element e.g `<p>paragraph of <button>Hello</button> text</p>`. This is called nesting an element.
-  - Multiple space between the code will count as a single space and newlines also count as spaces. This help will making your code easir to read.
-  - put contents of a element on its on line. e.g.
+  - Each HTML tag needs a closing html tag that has a slash before the element name. e.g `</button>`.
+  - Inbetween the tags you have the contents of the tag. `<button>Hello</button>`
+  - We can also have a element is side another element e.g `<p>paragraph of <button>Hello</button> text</p>`. This is called nesting an element.
+  - Multiple spaces between the code will count as a single space and newlines also count as spaces. This will help with making your code easier to read.
+  - Put contents of a element on its on line. e.g.
 
 
 ### CSS
@@ -37,13 +37,13 @@
 
 **Syntax**
 
-  - To write CSS code you need to create a separate .css file or write in the HTML code using a special element called the style elemente `<style> </style>`
-  - inside the style element we can nest CSS code e.g `button {}`. _create a new line between the two curly brackets by pressing enter_
+  - To write CSS code you need to create a separate .css file or write in the HTML code using a special element called the style element `<style> </style>`
+  - Inside the style element we can nest CSS code e.g `button {}`. _Create a new line between the two curly brackets by pressing enter_
   - inside the `button{}` we can then right code that tells the webpage how to change the appearance e.g
   `button { background-color: red; }`
-  - The code above will change the background color of all the button in the webpage to red.
-  - CSS selector `button` select which elements to change
-  - between the curly brack `{...}` we have the CSS Styles. `{background-color: red}`. This dictates how to change the appearance.
+  - The code above will change the background color of all the buttons in the webpage to red.
+  - CSS selector `button` selects which elements to change
+  - between the curly brackets `{...}` we have the CSS Styles. `{background-color: red}`. This dictates how to change the appearance.
   - for each style, The left side is called the CSS property `{Background-color: }` this tells the computer what we are changing.
   - On the right side we have the CSS value. `{ : red}`. this tells us what we are changing the property to.
 
@@ -57,7 +57,7 @@
   - Always have a space between the element and the attribute
   - `<button title="">`this is the attribute name and it tells us what we are changing about the element.
   - `<button title="Good job">` this is the attribute value and it tells us what we are changing the element to.
-  - seperate the attribute name and value with an equal sign **=** and wrap the value in double qoutes.
+  - Seperate the attribute name and value with an equal sign **=** and wrap the value in double qoutes.
 
 ### How do we style the same elements differently
 
@@ -74,16 +74,16 @@ The two primary structural components in HTML are the body and the head. Both of
 
 Below is the structure every website uses for its html.
 
-<!DOCTYPE html>
-<html>
-  <head>
-    
-  </head>
+  ```<!DOCTYPE html>
+  <html>
+    <head>
+      
+    </head>
 
-  <body>
-   
-  </body>
-</html>
+    <body>
+    
+    </body>
+  </html>```
 
 ## Javascript
 
