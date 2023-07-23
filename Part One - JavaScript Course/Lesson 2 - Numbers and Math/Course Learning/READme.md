@@ -4,7 +4,7 @@
 
 
 2 + 4
-6  -> **Addition**
+= 6  -> **Addition**
 
 4 - 2
 = 2 -> **Subtration**
@@ -47,15 +47,15 @@
 
   **Brackets () of multiplication (*), addition (+), subtraction(-), division(/)**
 
-    - this describes the order of precedence with brackets having the highest precedence meaning calculation in brackets are done first 
+  - this describes the order of precedence with brackets having the highest precedence meaning calculation in brackets are done first 
   
-    - then multiplication is next highest 
+  - then multiplication is next highest 
 
-    - followed by addition
+  - followed by addition
 
-    - then subtration
+  - then subtration
 
-    - and finally division
+  - and finally division
 
 
 ### Practical Examples (project/Amazon)
