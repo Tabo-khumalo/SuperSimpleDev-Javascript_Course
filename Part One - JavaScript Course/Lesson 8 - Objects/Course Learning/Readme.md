@@ -2,98 +2,122 @@
 
 ## What is a object?
 
-A _function_ in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. It lets us reuse code.
+An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method. Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life.
 
-### Syntax rules for functions
+## Syntax rules for Objects
 
     <script>
-
-      function function1() {
-        console.log('hello');
-        console.log(2 + 2);
-      };
-
-      function1();
+      const product = {
+        name: 'socks',
+        price: 1090
+      }
     </script>
 
-  - The fist line of the code is how to create a function. Type `function` and give your function a name like `function1` followed by brackets`()` and curly brackets `{}`.
-  - Between the curly brackets is the code the funtion will run when it is call. This is called the function body.
-  - To use the function or `call` the function, type the function name `function1` followed by brackets and a semi-colon `();`.
-  - You can use the same function multiple times by calling th function name.
+- To create an object we start with an open curly bracket `{` and end with a close curly bracket `}`.
+- Inside the object we can add values `'socks'` and the code on the right is the property `name`. We use the properties to access the corresponding value in the object `name: 'socks'`.
+- We separate the property and the value with a colon `:` and this is called a Property-Value Pair `price: 1090`
+- We can have more than one property value pair and we separate them using a comma `,` `name: 'Socks', price: 1090`
+- To access the object, we type the name of the object `product` followed by a `.` and then the property name `price`. This will give us the value `1090`. This is call _Dot notation_ `product.price`.
+- if we access a property that doesnt exist the value will be  `undefined`.
+- To change the value of a property, we can use Dot notation and an equals sign. `product.name = 'Cotton Socks';`
+- We can add a value to the object by creating a new property using dot notation and assigning a value to it using the equals sign. `product.newProperty = true;` 
+- We can also delete a property from the object by typing `delete` followed by `product.newProperty;` this will remove the property and value from the object. `delete product.newProperty;`
+- You can save and object in a variable and you can also `console.log();` an object
 
-  ### Rules for function names
+## Why do we use objects
 
-  - You can't use special words like `function`.
-  - You can't start with a number `2Function`.
-  - You can't use special characters `!@#%&` except `$` and `_`.
-  - You can't have space between the names `function two words` use camel case for function names.
+1. It makes our code more organized
 
-  ## return statment
+2. it lets us group multiple value together and let us use use multiple values together
 
-  ### What is a return statement?
+## how to access objects 
 
-  The return statement ends function execution and specifies a value to be returned to the function caller.
+### Dot notation
 
-  ### syntax rules for return statements
+Dot notation is the most common way to access elements in JavaScript. To use dot notation, you simply write the name of the object followed by a dot and the name of the property you want to access.
+
+    <script>
+      const car = {
+        name: 'BMW',
+        Year: 2023
+      }
+
+      console.log(car.name);
+    </script>
+
+### Bracket notation
+
+The Bracket Notation approach involves using square brackets, in which you have an expression that evaluates to a value. That value serves as a key for accessing the property.
+
+    <script>
+      const car = {
+        name: 'BMW',
+        Year: 2023
+      }
+
+      console.log(car.['name']);
+    </script>
+
+### Which one should we use
+
+- we use dot notation by default because it's easier to read and type.
+- we use bracket notation when we have value we can use dot notation with e.g `delivery-time`. if we use dot notation here JavaScript will think the dash is a minus sign, so we use bracket notation to counter this.
+
+## Object method
+
+An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method. Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life.
+
+      <script>
+        value = {
+          name: test,
+          functionMethod: function function1() {
+            console.log('method');
+          }
+        }
+        value.functionMethod();
+      </script>
+
+## built-in Objects
+
+An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method. Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life.
+
+### JSON Built-in Object
+
+JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa).
+
+- JSON Stands for JavaScript Object Notation
+- It is a type of syntax similar to JavaScript Object but with less features
+- all properties and strings must use double qoutes
+- It does not support functions
+- JSON is more universal than JavaScript objects
+- we use JSON When we send data between computers
+- We use JSON When we store data
+
 
         <script>
-          return 'hello'
+          {
+            "name": "shirt",
+            "delivery-time": "1 day",
+            "rating": {
+              "stars": 4.5,
+              "count": 87
+            }
+          }
+
         </script>
 
-- We can return a calculation `return 2 + 2`
-- we can return a variable `return variable1`
-- this called returning a value or a return value
-- We do not need to always return a value we can.
-- if your type `return` with no value, it will return undefined
-- return ends the funtion and returns to where the funtion is called. Any code after the return statement will not execute.
+- The built in JSON Object help us conve  JSON objects back to JavaScript Object.
+
+### Local Storage
+
+localStorage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date. This means the data stored persists even after the user closes the browser or restarts the computer.
+
+- Local storage only support string, If you have an object to save convert it to a string using JSON.
 
 
-## Parameters
 
-### What is a Parameter
 
-The parameters, in a function call, are the function's arguments. JavaScript arguments are passed by value: The function only gets to know the values, not the argument's locations. If a function changes an argument's value, it does not change the parameter's original value. it puts a value into the funtion.
 
-### Rules for Parameter names
 
-  - You can't use special words like `function`.
-  - You can't start with a number `2Parameter`.
-  - You can't use special characters `!@#%&` except `$` and `_`.
-  - You can't have space between the names `function function1(two words) {}`. use camel case for function names.
 
-### Syntax rules for Parameters
 
-    <script>
-
-      function calculateTax(cost) {
-          console.log(cost * 0.1);
-        };
-
-        calculateTax(2000);
-        calculateTax(5000)
-        
-    </script>
-
-  - in the function `function calculateTax() {}` add the parameter name into the brackets `function calculateTax(cost) {}`.
-  - add the code to be called in the curly brackets. `{console.log(cost * 0.1);};` and replace the value with a parameter.
-  - call the function and parse in the value of the parameter `calculateTax(2000)`.
-  - the value in the function call with be substituted in the the function and the calculation will calculate based on the value.
-
-            <script>
-
-              function calculateTax(cost, taxPercent = 0.1) {
-                console.log(cost * taxPercent);
-              };
-
-                calculateTax(2000, 0.2);
-                calculateTax(5000);
-
-            </script>
-
-  - You can have more than one parameter in the function `function calculateTax(cost, taxpercent)` by separating the names with a comma.
-  - you can then use the parameter like a variable in the calculation `{console.log(cost * taxPercent)}`
-  - You can separate the values being passed into the the different parameters by separating them with a comma when you call the function `calculateTax(2000 * 0.2)`.
-  - if there is no value being passed for the parameter the code will result in undefined and Nan (Note a Number).
-  - To avoid this, You can set a default value for the parameter in the case that no value has been passed. `function calculateTax(cost, taxPercentage = 0.1)`
-
-  
