@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arrays and loops</title>
+</head>
+<body>
+  
+  <script>
+    function minMax(nums) {
+      let min = nums[0];
+      let max = nums.length -1;
+
+      for (let i = 0; i < nums.length; i++) {
+        
+        if (min > nums[i] ) {
+          min = nums[i];
+        };
+
+        if (max < nums[i]) {
+          max = nums[i];
+        };
+  
+      };
+ 
+      let range = {
+        min: `${min}`,
+        max: `${max}`
+      };
+      
+      return range;
+
+    };
+
+    console.log(minMax([15, 5, 9]));
+
+  </script>
+</body>
+</html>
+

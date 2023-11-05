@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arrays and loops</title>
+</head>
+<body>
+  
+  <script>
+    function removeEgg(foods){
+
+      let result;
+      let food = [];
+
+      for(let i = 0; i < foods.length; i++) {
+        if (foods[i] !== 'egg') {
+          result = foods[i];
+          food.push(result); 
+          continue
+        };   
+    }
+    return food;
+  };
+    console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+
+  </script>
+</body>
+</html>
+
